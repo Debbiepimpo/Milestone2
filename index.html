@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_dKhaum0TASPcamVR56fEG");
+        })();
+    </script>
+    <title>Holidays in Isles of Scilly</title>
+</head>
+
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <a href="index.html" class="navbar-brand">Isles of Scilly</a>
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Isles"><i class="fas fa-map-pin" aria-hidden="true"></i> Isles<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Accomodations"><i class="fas fa-h-square" aria-hidden="true"></i> Accomodations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Explore"><i class="fas fa-hiking" aria-hidden="true"></i> Explore </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact"><i class="fas fa-envelope-open-text" aria-hidden="true"></i> Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--end of Navbar-->
+    <!--Section-->
+    <section>
+        <div class="container-fluid callout-container" id="home">
+            <!-- Callout -->
+            <div class="opaque-overlay">&nbsp;</div>
+            <div class="row">
+                <div class="col-12">
+                    <section class="callout jumbotron text-center">
+                        <h1 class="jumbotron-header">Isles of Scilly</h1>
+                        <hr class="block-divider block-divider--blue">
+                        <p class="lead">Discover the isles, book the best hotel and funny activities for your holidays.
+                            <span class="d-inline d-sm-none"><br></span>
+                            <strong><mark>Best place in England!</mark></strong></p>
+                        <p class="text-muted"><small>Plan your holidays on Isles of Scilly!</small></p>
+                    </section>
+                </div>
+            </div>
+            <!-- /.callout -->
+        </div>
+
+        <!-- Isles -->
+        <div class="isles-container-wrapper" id="Isles">
+            <div class="container city-container content-container">
+                <section class="isles">
+                    <div class="row">
+                        <div class="col-12 page-header">
+                            <h2 class="text-uppercase">Isles</h2>
+                            <hr class="block-divider block-divider--short">
+                        </div>
+                    </div>
+                    <div class="map" id="map"></div>
+                    <div class="row">
+                        <div class="col-12 col-md-6" id="isle0">
+                            <div class="media">
+                                <div class="d-none d-sm-block">
+                                    <img src="assets/images/island-st-marys.jpg" class="rounded-circle mr-3" height=100 width=100>
+                                </div>
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p class="text-uppercase">St. Mary's</p>
+                                        <p>It's the biggest island! Here are most of the hotels and you can take a ship for the other islands.</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6"  id="isle1">
+                            <div class="media">
+                                <div class="d-none d-sm-block">
+                                    <img src="assets/images/tresco.jpg" class="rounded-circle mr-3" height=100 width=100>
+                                </div>
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p class="text-uppercase">Tresco</p>
+                                        <p>Relaxing beaches for a daytrip.</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6"  id="isle2">
+                            <div class="media">
+                                <div class="d-none d-sm-block">
+                                    <img src="assets/images/st-martins.jpg" class="rounded-circle mr-3" height=100 width=100>
+                                </div>
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p class="text-uppercase">St. Martin's</p>
+                                        <p>Unforgetable relaxing place to enjoy with your love.</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6"  id="isle3">
+                            <div class="media">
+                                <div class="d-none d-sm-block">
+                                    <img src="assets/images/st-agnes.jpg" class="rounded-circle mr-3" height=100 width=100>
+                                </div>
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p class="text-uppercase">St. Agnes's</p>
+                                        <p>Wild little island for exploring with your family.</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6"  id="isle4">
+                            <div class="media">
+                                <div class="d-none d-sm-block">
+                                    <img src="assets/images/bryher.jpg" class="rounded-circle mr-3" height=100 width=100>
+                                </div>
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p class="text-uppercase">Bryher</p>
+                                        <p>With rugged clifts and an inspiration for adventure people.</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6"  id="isle5">
+                            <div class="media">
+                                <div class="d-none d-sm-block">
+                                    <img src="assets/images/unhabitated-isle.jpg" class="rounded-circle mr-3" height=100 width=100>
+                                </div>
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p class="text-uppercase">Unhabitated islands</p>
+                                        <p>Most beautiful paradise for wildlife such as birds and seals.</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- /.isles -->
+        <!-- Accomodations -->
+        <div class="accomodations-container-wrapper" id="Accomodations">
+            <div class="container acomodations-container content-container">
+                <section class="accomodations">
+                    <div class="row">
+                        <div class="col-12 page-header">
+                            <h2 class="text-uppercase">Accomodation</h2>
+                            <hr class="block-divider block-divider--short">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- /.Accomodations -->
+        <!-- Explore -->
+        <div class="explore-container-wrapper" id="Explore">
+            <div class="container explore-container content-container">
+                <section class="explore">
+                    <div class="row">
+                        <div class="col-12 page-header">
+                            <h2 class="text-uppercase">EXPLORE THE ISLES</h2>
+                            <hr class="block-divider block-divider--short">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card-deck">
+                            <div class="card">
+                                <a href="https://www.islesofscilly-travel.co.uk/scillonian-iii/" target="_blank">
+                                    <img src="assets/images/ferry.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Ferry Trip.</h5>
+                                    <p class="card-text">The Scillonian III ferry is one of the options for travelling to St Mary's, very comfortable and guess what? is Dog friendly! </p>
+                                    <p class="card-text"><small class="text-muted">Please check availability before travelling.</small></p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="https://www.islesofscilly-travel.co.uk/skybus/" target="_blank">
+                                    <img src="assets/images/skybus.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Plane Trip</h5>
+                                        <p class="card-text">Sky bus is the other best option for travelling to the isles.</p>
+                                        <p class="card-text"><small class="text-muted">Please book your flight in advance.</small></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="https://www.horsesonscilly.co.uk/ridesandprices" target="_blank">
+                                    <img src="assets/images/riding-horse.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Riding a horse</h5>
+                                        <p class="card-text">Are you fancy to ride a horse on the beach? St Mary's isle has the best place to do it!</p>
+                                        <p class="card-text"><small class="text-muted">Please book in advance.</small></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-deck">
+                            <div class="card">
+                                <a href="https://www.stagnesboating.co.uk/" target="_blank">
+                                <img src="assets/images/birds.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wild Birds</h5>
+                                    <p class="card-text">If you love wild birds wo lives in the sea, the isles has a lot of places where you can admire them.</p>
+                                    <p class="card-text"><small class="text-muted">Please book in advance.</small></p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="https://www.scillyboating.co.uk/" target="_blank">
+                                    <img src="assets/images/seal.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Wild sea life</h5>
+                                    <p class="card-text">If you prefer admire the seals and dolphins, there are plenty trips from the isles to their habitat for apreciate this amazing animals.</p>
+                                    <p class="card-text"><small class="text-muted">Please book in advance.</small></p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="https://adventureline.co.uk/uk-walks/isles-of-scilly/" target="_blank">
+                                    <img src="assets/images/sunrise.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Walking Tours.</h5>
+                                    <p class="card-text">A good option if you love exploring new places, are the walking tours around the isles. This let you enjoy magical places.</p>
+                                    <p class="card-text"><small class="text-muted">Please have a look  of them.</small></p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 page-header">
+                            <hr class="block-divider block-divider--short">
+                            <h2 class="text-uppercase">And much more!!!</h2>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- /.Explore -->
+        <!-- Contact -->
+        <div class="contact-container-wrapper" id="Contact">
+            <div class="container contact-container content-container">
+                <section class="Contact">
+                    <div class="row">
+                        <div class="col-12 page-header">
+                            <h2 class="text-uppercase">Contact</h2>
+                            <hr class="block-divider block-divider--short">
+                            <p>If you have any enqueries feel free to get in touch!!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <form onsubmit="return sendMail(this);">
+                                <div class="form-group">
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" class="form-control" id="fullname" placeholder="Full Name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="emailaddress">Email address</label>
+                                    <input type="email" class="form-control" id="emailaddress" aria-describedby="emailHelp" placeholder="example@email.com" required="">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                    else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="enquiry-text">Enquiry</label>
+                                    <textarea class="form-control" name="quiry" id="enquiry" placeholder="Text here" required=""></textarea>
+                                </div>
+                                <button type="submit" class="btn btn--blue btn-cta">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+        <!-- /.Contact -->
+        <!-- Features -->
+        <div class="container-wrapper container-wrapper--red">
+            <div class="container features-container content-container">
+                <section class="features">
+                    <div class="row">
+                        <div class="col-12 page-header">
+                            <h2 class="text-uppercase">Features:</h2>
+                            <hr class="block-divider block-divider--short block-divider--white">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="feature">
+                                <h3><i class="fas fa-gift d-none d-sm-block"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                                <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="feature">
+                                <h3><i class="fas fa-credit-card d-none d-sm-block"></i> Feature 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                                <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                            </div>
+                        </div>
+                        <div class="col-12 d-md-none d-lg-block col-lg-4">
+                            <div class="feature">
+                                <h3><i class="fas fa-times-circle d-none d-sm-block"></i> Feature 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                                <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /.features -->
+            </div>
+        </div>
+        <!-- /.Features -->
+        
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&libraries=places&callback=initMap"></script>
+     <script src="assets/js/maps.js"></script>
+     <script src="assets/js/contact-email.js"></script>
+</body>
+
+</html>
