@@ -15,9 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+   
 }
 
 .opaque-overlay {
@@ -86,7 +84,6 @@ body {
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
-    color: white;
 }
 
 .jumbotron .lead {
@@ -96,7 +93,7 @@ body {
 
 .jumbotron small {
     font-size: 60%;
-    font-style: ic;
+    font-style: inherit;
     color: #d0d0d0;
 }
 
@@ -168,7 +165,7 @@ body {
     font-family:"Josefin Slab", cursive;
     font-weight:700;
     color: #0c9cb9;
-    font: uppercase;
+    text-transform: uppercase;
     margin-top: 0;
 }
 
@@ -220,13 +217,14 @@ img {
 
 /*---------------------------------Map*/
 
-  #map {
+  #map, #mapPlaces{
     position: relative;
     height: 360px;
     width: 680px;
     padding: 0px;
     border-width: 0px;
-    margin: 15%;
+    margin: auto;
+    margin-bottom: 5%;
     left: 0px;
     top: 0px;
     touch-action: pan-x pan-y;
@@ -237,7 +235,8 @@ img {
     width: 300px;
     padding: 0px;
     border-width: 0px;
-    margin-left: 10px;
+    margin: auto;
+    margin-bottom: 5%;
     left: 0px;
     top: 0px;
     touch-action: pan-x pan-y;
@@ -281,8 +280,6 @@ label {
 .form-container {
     max-width: 90%;
     position: relative;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     padding-top: 25px;
@@ -301,7 +298,7 @@ label {
 /*----------------------------------------------------Media Queries*/
 /*-------------------------------------phones*/
 @media (max-width: 767px) { 
-	#map {
+	#map,#mapPlaces {
 	height: 250px;
     width: 300px;
     margin-left: 7%;
@@ -317,13 +314,13 @@ label {
 
 /*-------------------------------------phones and tablets*/
 @media (min-width: 768px) and (max-width: 1024px) { 
-	#map {
+	#map,#mapPlaces {
 	height: 360px;
     width: 680px;
     padding: 0px;
     border-width: 0px;
-    margin-bottom: 7%;
-    margin-left: 0px;
+    margin-bottom: 5%;
+    
     
 	}
 	
