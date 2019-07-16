@@ -67,6 +67,8 @@
 }
 
 function createMarker(place) {
+  map.setCenter( {lat: 49.9317211, lng: -6.3187838} );
+  map.setZoom(11);
   var image = {
       url: place.icon,
       size: new google.maps.Size(71, 71),

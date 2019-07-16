@@ -15,6 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    
    
 }
 
@@ -38,7 +39,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     padding-left: 0;
     padding-right: 0;
 }
@@ -179,6 +179,7 @@ body {
     margin-bottom: 25px;
 }
 
+
 /*-----------------------------------------Features */
 
 .feature {
@@ -312,8 +313,18 @@ label {
     }
 } 
 
+/*------------------------------------------media*/
+
+.media {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
 /*-------------------------------------phones and tablets*/
 @media (min-width: 768px) and (max-width: 1024px) { 
+    
+    
 	#map,#mapPlaces {
 	height: 360px;
     width: 680px;
