@@ -27,18 +27,24 @@
       });
 
       marker.addListener('click', function() {
-        manageStyles(i);
+        showModal(i);
+        clearItemInList();
+        initPlacesMap(location);
       });
       return marker;
     });
 
     var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+    
+    initPlacesMap(locations[0]);
 
+}
 
+function initPlacesMap(location) {
     var bounds = new google.maps.LatLngBounds();
     var placesList = document.getElementById('places');
   
-    var location = new google.maps.LatLng(49.914134, -6.314372);
+    var location = new google.maps.LatLng(location);
 
     infowindow = new google.maps.InfoWindow();
 
@@ -102,10 +108,14 @@ function createItemInList(place,bounds,placesList,service) {
   };
   
   service.getDetails(request, function(placeDetail, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
+    if (status === google.maps.places.PlacesServiceStatus.OK && placeDetail.website != undefined) {
       a.href= placeDetail.website;
     }
+    else{
+      a.style.color="rgba(153,122,0,0.68)";
+    }
   });
+  
 
   placesList.appendChild(a);
   
@@ -115,6 +125,50 @@ function createItemInList(place,bounds,placesList,service) {
   bounds.extend(place.geometry.location);
 }
 
-function manageStyles(i) {
-  $('#myModal').modal('show');
+function showModal(i) {
+  
+  var name = "";
+  var image = "";
+  switch (i) {
+    case 0:
+      name = "St. Mary's"
+      image = "assets/images/island-st-marys.jpg"
+      break;
+    case 1:
+      name = "Tresco"
+      image = "assets/images/tresco.jpg"
+      break;
+    case 2:
+      name = "St. Martin's"
+      image = "assets/images/st-martins.jpg"
+      break;
+    case 3:
+      name = "St. Agnes's"
+      image = "assets/images/st-agnes.jpg"
+      break;
+    case 4:
+      name = "Bryher"
+      image = "assets/images/bryher.jpg"
+      break;
+    default:
+      name = "The island"
+      image = "assets/images/unhabitated-isle.jpg"
+  }
+  $('#myModal').on($.modal.BEFORE_OPEN, function(event, modal) {
+    $('#modalTitle').html("Welcome to " + name);
+    $('#modalImage').attr("src",image);
+  });
+  $('#myModal').on($.modal.CLOSE, function(event, modal) {
+    var top = $('#Accomodations').position().top;
+    $(window).scrollTop( top );
+  });
+  $("#myModal").modal({
+    fadeDuration: 2000,
+    fadeDelay: 0.50,
+    showClose: false
+  });
+}
+  
+function clearItemInList() {
+  document.getElementById('places').innerHTML = "";
 }
