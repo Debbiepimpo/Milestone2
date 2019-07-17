@@ -92,7 +92,7 @@ To deploy this website to GitHub pages:
 
 ### To run this project locally
 
-* Follow this link to the [GitHub Repositiry](https://github.com/jboyd8/milestone-project-1)
+* Follow this link to the [GitHub Repositiry](https://github.com/Debbiepimpo/Milestone2)
 * Click on the 'Clone or Download' button.
 * Copy the URL provided.
 * Open a bash terminal, move to your desired directory.
@@ -101,7 +101,7 @@ To deploy this website to GitHub pages:
 
 ## Credits
 ---
-* To my mentor, [Sandeep Aggarwall](https://github.com/asandeep), for guding me through the process of this project,offering assistance when neccesary and providing an honest feedback about my work to point me in the right direction.
+* To my mentor, [Sandeep Aggarwall](https://github.com/asandeep), for guiding me through the process of this project,offering assistance when neccesary and providing an honest feedback about my work to point me in the right direction.
 * The Slack community which people who is there trying to help each other with the skills they've learnt for coding and is able to receive from the other students is a really great tool to have.
 * [W3Schools](https://www.w3schools.com/) - I used this to ensure I was entering all the information required correctly on my HTML and CSS and even for helping me with the functions on JavaScript.
 * [Stack overflow](https://stackoverflow.com/) - Very good and usefull website for implement what you need to use one your backend related with JavaScript.
