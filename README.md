@@ -92,7 +92,7 @@ To deploy this website to GitHub pages:
 
 ### To run this project locally
 
-* Follow this link to the [GitHub Repositiry](https://github.com/Debbiepimpo/Milestone2)
+* Follow this link to the [GitHub Repository](https://github.com/Debbiepimpo/Milestone2)
 * Click on the 'Clone or Download' button.
 * Copy the URL provided.
 * Open a bash terminal, move to your desired directory.
