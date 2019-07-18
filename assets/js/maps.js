@@ -63,7 +63,7 @@ function initPlacesMap(location) {
         for (var i = 0; i < results.length; i++) {
           createMarker(results[i]);
           if(i<10)
-            createItemInList(results[i],bounds,placesList,service)
+            createItemInList(results[i],bounds,placesList,service);
       }
         mapPlaces.setCenter(results[0].geometry.location);
       }
@@ -131,28 +131,28 @@ function showModal(i) {
   var image = "";
   switch (i) {
     case 0:
-      name = "St. Mary's"
-      image = "assets/images/island-st-marys.jpg"
+      name = "St. Mary's";
+      image = "assets/images/island-st-marys.jpg";
       break;
     case 1:
-      name = "Tresco"
-      image = "assets/images/tresco.jpg"
+      name = "Tresco";
+      image = "assets/images/tresco.jpg";
       break;
     case 2:
-      name = "St. Martin's"
-      image = "assets/images/st-martins.jpg"
+      name = "St. Martin's";
+      image = "assets/images/st-martins.jpg";
       break;
     case 3:
-      name = "St. Agnes's"
-      image = "assets/images/st-agnes.jpg"
+      name = "St. Agnes's";
+      image = "assets/images/st-agnes.jpg";
       break;
     case 4:
-      name = "Bryher"
-      image = "assets/images/bryher.jpg"
+      name = "Bryher";
+      image = "assets/images/bryher.jpg";
       break;
     default:
-      name = "The island"
-      image = "assets/images/unhabitated-isle.jpg"
+      name = "The island";
+      image = "assets/images/unhabitated-isle.jpg";
   }
   $('#myModal').on($.modal.BEFORE_OPEN, function(event, modal) {
     $('#modalTitle').html("Welcome to " + name);
