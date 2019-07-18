@@ -64,7 +64,7 @@ Mobile wireframes:
 
 I have been automatically testing my website while i was developing the project. I used the web developer tools regulary to ensure my website was responsive for mobile screen sizes and larger screen sizes. I used the device feature of dev tools for testing the website on all devices available.
 
-I've checked my HTML and CSS structure were done in [W3C Validator](https://validator.w3.org/#validate_by_input) for HTML and [JIGSAW W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) for CSS to make sure there weren't error and the structure was being coded correctly. I checked this continuously through the process.
+I've checked my HTML and CSS structure were done in [W3C Validator](https://validator.w3.org/#validate_by_input) for HTML,[JIGSAW W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) for CSS and [JSHint](https://jshint.com/) to make sure there weren't any awkward error and the structure was being coded correctly. I checked this continuously through the process.
 
 If there was an error on my page, I would first change what was wrong in the dev tools so I would be able to see a live update into my browser. Once I've found the issue I went back to Cloud9 at AWS and make the changes there. 
 
@@ -92,7 +92,7 @@ To deploy this website to GitHub pages:
 
 ### To run this project locally
 
-* Follow this link to the [GitHub Repositiry](https://github.com/jboyd8/milestone-project-1)
+* Follow this link to the [GitHub Repository](https://github.com/Debbiepimpo/Milestone2)
 * Click on the 'Clone or Download' button.
 * Copy the URL provided.
 * Open a bash terminal, move to your desired directory.
@@ -101,7 +101,7 @@ To deploy this website to GitHub pages:
 
 ## Credits
 ---
-* To my mentor, [Sandeep Aggarwall](https://github.com/asandeep), for guding me through the process of this project,offering assistance when neccesary and providing an honest feedback about my work to point me in the right direction.
+* To my mentor, [Sandeep Aggarwall](https://github.com/asandeep), for guiding me through the process of this project,offering assistance when neccesary and providing an honest feedback about my work to point me in the right direction.
 * The Slack community which people who is there trying to help each other with the skills they've learnt for coding and is able to receive from the other students is a really great tool to have.
 * [W3Schools](https://www.w3schools.com/) - I used this to ensure I was entering all the information required correctly on my HTML and CSS and even for helping me with the functions on JavaScript.
 * [Stack overflow](https://stackoverflow.com/) - Very good and usefull website for implement what you need to use one your backend related with JavaScript.
