@@ -2,6 +2,8 @@
   var mapPlaces;
   var service;
   var infowindow;
+  
+/*----The function below is used to initialize the googleMap API map, setting the markers and functionality----*/
 
    function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -40,6 +42,8 @@
 
 }
 
+/*----The function below is used to initialize the googlePlaces API map, setting the markers and functionality----*/
+
 function initPlacesMap(location) {
     var bounds = new google.maps.LatLngBounds();
     var placesList = document.getElementById('places');
@@ -72,6 +76,8 @@ function initPlacesMap(location) {
   map.fitBounds(bounds);
 }
 
+/*----The function below is used to create a marker inside the map----*/
+
 function createMarker(place) {
   map.setCenter( {lat: 49.9317211, lng: -6.3187838} );
   map.setZoom(11);
@@ -95,6 +101,8 @@ function createMarker(place) {
     infowindow.open(mapPlaces, this);
   });
 }
+
+/*----The function below is used to create an HTML element and introduced inside the website page----*/
 
 function createItemInList(place,bounds,placesList,service) {
   
@@ -124,6 +132,8 @@ function createItemInList(place,bounds,placesList,service) {
 
   bounds.extend(place.geometry.location);
 }
+
+/*----The function below is used for showing the modal with a variable content depending the marker selected----*/
 
 function showModal(i) {
   
@@ -168,7 +178,9 @@ function showModal(i) {
     showClose: false
   });
 }
-  
+
+/*----The function below is used to empty the HTML element which contains the list of places----*/
+
 function clearItemInList() {
   document.getElementById('places').innerHTML = "";
 }
