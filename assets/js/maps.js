@@ -13,11 +13,11 @@
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     var locations = [
-      { lat: 49.914134, lng: -6.314372 },
-      { lat: 49.952683, lng: -6.330406 },
-      { lat: 49.962188, lng: -6.285320 },
-      { lat: 49.892567, lng: -6.345399 },
-      { lat: 49.953009, lng: -6.353147 }
+      ST_MARYS = { lat: 49.914134, lng: -6.314372 },
+      TRESCO = { lat: 49.952683, lng: -6.330406 },
+      ST_MARTINS = { lat: 49.962188, lng: -6.285320 },
+      ST_AGNES = { lat: 49.892567, lng: -6.345399 },
+      BRYHER = { lat: 49.953009, lng: -6.353147 }
     ];
 
 

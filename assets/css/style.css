@@ -5,6 +5,41 @@ body {
     font-family: "Pacifico", cursive;
 }
 
+
+footer {
+    background-color: #00000040;
+    color: #0c9cb9;
+    min-height: 100px;
+}
+
+h5 {
+    font-family: "Josefin Slab", cursive;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #0c9cb9;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+label {
+    font-size: larger;
+    color: #f1bb1b;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    margin-top: 25px;
+}
+
+/*a {
+    color: #0c9cb9;
+}*/
+
+
 /*Containers*/
 
 .callout-container {
@@ -172,10 +207,6 @@ mark {
     margin-top: 0;
 }
 
-h4 {
-    margin-top: 25px;
-}
-
 /*Section*/
 
 .quotes .blockquote {
@@ -215,11 +246,6 @@ h4 {
 
 
 /*Cards*/
-
-img {
-    vertical-align: middle;
-    border-style: none;
-}
 
 .card-img-top {
     height: 200px;
@@ -272,12 +298,6 @@ img {
     font-family: "Josefin Slab", cursive;
 }
 
-label {
-    font-size: larger;
-    color: #f1bb1b;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
 
 .form-control {
     padding: 0.375rem 0.75rem;
@@ -305,20 +325,6 @@ label {
 
 #enquery-text {
     height: 200px;
-}
-/*Footer*/
-
-footer {
-    background-color: #00000040;
-    color: #0c9cb9;
-    min-height: 100px;
-}
-
-h5 {
-    font-family: "Josefin Slab", cursive;
-    font-weight: 600;
-    font-size: 2rem;
-    color: #0c9cb9;
 }
 
 .social-links {
