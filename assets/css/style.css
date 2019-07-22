@@ -288,6 +288,14 @@ mark {
     margin-left: 25%;
 }
 
+a.no-link {
+    color: rgba(153,122,0,0.68) !important;
+}
+
+a.with-link{
+    color: #0c9cb9;
+}
+
 /*Contact Form*/
 
 .Contact {

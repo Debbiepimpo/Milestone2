@@ -67,16 +67,42 @@ Mobile wireframes:
 
 ## Testing
 ---
+##### W3
 
-I have been automatically testing my website while I was developing the project. I used the web developer tools regularly to ensure my website was responsive for mobile screen sizes and larger screen sizes. I used the device feature of dev tools for testing the website on all devices available.
+I made the automatically testing using the W3 HTML checker:
 
-I've checked my HTML and CSS structure were done in [W3C Validator](https://validator.w3.org/#validate_by_input) for HTML,[JIGSAW W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) for CSS and [JSHint](https://jshint.com/) to make sure there weren't any awkward error and the structure was being coded correctly. I checked this continuously through the process.
+* [W3C Validator](https://validator.w3.org/#validate_by_input) - For HTML
+* [JIGSAW W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - For CSS
+* [JSHint](https://jshint.com/) - For JavaScript
 
-If there was an error on my page, I would first change what was wrong in the dev tools so I would be able to see a live update into my browser. Once I've found the issue I went back to Cloud9 at AWS and make the changes there. 
+##### Chrome Dev Tools
 
-Even for I've been provided my GitHub pages link to a group of friends to test the website on mobile and desktop. I had users click on all the links on the page, and also click on all the markers into the maps to make sure the links and makers worked as desired. My friends were asked to enter information into the contact form and ensure they entered information into every field because the form fields were designed with the 'required' attribute.
+I used Dev Tools to check if there was an error on my page. 
+Then, I changed what was wrong in the dev tools and I would be able to see 
+the changes in a live update into my browser.Once I've found the issue I went
+back to Cloud9 at AWS and make the changes there. 
 
-### Bugs
+
+##### Manual Testing
+
+I have tested the website on:
+
+* Google Chrome
+* Apple Safari
+* Internet Explorer
+* Mozilla Firefox
+
+##### Devices Tested:
+
+* iPhone X
+* iPhone 8
+* iPhone 6/7
+* iPad Pro
+* iPad
+* Samsung Galaxy S9
+* Huawei M20
+
+### Debugging
 
 During the process of this website, I found little bugs but nothing I couldn't fix. 
 
@@ -101,7 +127,7 @@ To deploy this website to GitHub pages:
 * Select 'Settings' from the menu bar.
 * From the GitHub pages section, I chose 'master branch' from the dropdown menu.
 * Once selected, I refreshed the page and a link was generated in the GitHub pages section to my website.
-* [Website Link](https://debbiepimpo.github.io/Milestone2/)
+* [Website Link]( https://debbiepimpo.github.io/Milestone2/)
 
 ### To run this project locally
 

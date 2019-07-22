@@ -3,8 +3,7 @@
   var service;
   var infowindow;
   
-/*----The function below is used to initialize the googleMap API map, setting the markers and functionality----*/
-
+/*----Initialize the googleMap API map, setting the markers and functionality----*/
    function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
       center: { lat: 49.9317211, lng: -6.3187838 },
@@ -12,14 +11,14 @@
     });
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    var locations = [
-      ST_MARYS = { lat: 49.914134, lng: -6.314372 },
-      TRESCO = { lat: 49.952683, lng: -6.330406 },
-      ST_MARTINS = { lat: 49.962188, lng: -6.285320 },
-      ST_AGNES = { lat: 49.892567, lng: -6.345399 },
-      BRYHER = { lat: 49.953009, lng: -6.353147 }
-    ];
 
+    var ST_MARYS = { lat: 49.914134, lng: -6.314372 };
+    var TRESCO = { lat: 49.952683, lng: -6.330406 };
+    var ST_MARTINS = { lat: 49.962188, lng: -6.285320 };
+    var ST_AGNES = { lat: 49.892567, lng: -6.345399 };
+    var BRYHER = { lat: 49.953009, lng: -6.353147 };
+
+    var locations = [ST_MARYS, TRESCO, ST_MARTINS, ST_AGNES, BRYHER];
 
     var markers = locations.map(function(location, i) {
       var marker = new google.maps.Marker({
@@ -42,8 +41,7 @@
 
 }
 
-/*----The function below is used to initialize the googlePlaces API map, setting the markers and functionality----*/
-
+/*----Initialize the googlePlaces API map, setting the markers and functionality----*/
 function initPlacesMap(location) {
     var bounds = new google.maps.LatLngBounds();
     var placesList = document.getElementById('places');
@@ -76,8 +74,7 @@ function initPlacesMap(location) {
   map.fitBounds(bounds);
 }
 
-/*----The function below is used to create a marker inside the map----*/
-
+/*----Used to create a marker inside the map----*/
 function createMarker(place) {
   map.setCenter( {lat: 49.9317211, lng: -6.3187838} );
   map.setZoom(11);
@@ -102,8 +99,7 @@ function createMarker(place) {
   });
 }
 
-/*----The function below is used to create an HTML element and introduced inside the website page----*/
-
+/*----Create an HTML element and introduced inside the website page----*/
 function createItemInList(place,bounds,placesList,service) {
   
   var a = document.createElement('a');
@@ -118,9 +114,10 @@ function createItemInList(place,bounds,placesList,service) {
   service.getDetails(request, function(placeDetail, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK && placeDetail.website != undefined) {
       a.href= placeDetail.website;
+      $(this).toggleClass("with-link");
     }
     else{
-      a.style.color="rgba(153,122,0,0.68)";
+      $(this).toggleClass("no-link");
     }
   });
   
@@ -133,8 +130,7 @@ function createItemInList(place,bounds,placesList,service) {
   bounds.extend(place.geometry.location);
 }
 
-/*----The function below is used for showing the modal with a variable content depending the marker selected----*/
-
+/*----Showing the modal with a variable content depending the marker selected----*/
 function showModal(i) {
   
   var name = "";
@@ -179,7 +175,7 @@ function showModal(i) {
   });
 }
 
-/*----The function below is used to empty the HTML element which contains the list of places----*/
+/*----To empty the HTML element which contains the list of places----*/
 
 function clearItemInList() {
   document.getElementById('places').innerHTML = "";
