@@ -76,6 +76,13 @@ If there was an error on my page, I would first change what was wrong in the dev
 
 Even for I've been provided my GitHub pages link to a group of friends to test the website on mobile and desktop. I had users click on all the links on the page, and also click on all the markers into the maps to make sure the links and makers worked as desired. My friends were asked to enter information into the contact form and ensure they entered information into every field because the form fields were designed with the 'required' attribute.
 
+### Bugs
+
+During the process of this website, I found little bugs but nothing I couldn't fix. 
+
+A good example of this is when I change the color of the navbar links the "Isles" it didn't hoover to white when you pass the mouse through it.
+It was working as desired after I delete one class that was extra.
+
 
 ## Deployment
 ---
@@ -103,7 +110,6 @@ To deploy this website to GitHub pages:
 * Copy the URL provided.
 * Open a bash terminal, move to your desired directory.
 * Type 'git clone' and paste in the URL.
-
 
 ## Credits
 ---
