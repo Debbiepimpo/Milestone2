@@ -2,8 +2,11 @@
   var mapPlaces;
   var service;
   var infowindow;
-  
-/*----Initialize the googleMap API map, setting the markers and functionality----*/
+
+/**
+ * Initialize the googleMap API map, setting the markers and functionality
+ * @return void
+ */
    function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
       center: { lat: 49.9317211, lng: -6.3187838 },
@@ -41,7 +44,11 @@
 
 }
 
-/*----Initialize the googlePlaces API map, setting the markers and functionality----*/
+/**
+ * Initialize the googlePlaces API map, setting the markers and functionality
+ * @param {String} location the location to be set on the map
+ * @return void
+ */
 function initPlacesMap(location) {
     var bounds = new google.maps.LatLngBounds();
     var placesList = document.getElementById('places');
@@ -74,7 +81,11 @@ function initPlacesMap(location) {
   map.fitBounds(bounds);
 }
 
-/*----Used to create a marker inside the map----*/
+/**
+ * Used to create a marker inside the map
+ * @param {google.maps.Place} Place the object containing information of a place
+ * @return void
+ */
 function createMarker(place) {
   map.setCenter( {lat: 49.9317211, lng: -6.3187838} );
   map.setZoom(11);
@@ -99,7 +110,15 @@ function createMarker(place) {
   });
 }
 
-/*----Create an HTML element and introduced inside the website page----*/
+/**
+ * Create an HTML element and introduced inside the website page
+ * @param {google.maps.Place} place the object containing information of a place
+ * @param {google.maps.LatLngBounds} bounds the object contains the marker's bounds on the map
+ * @param {HTML <div> } placesList HTML object which contains the links for the places
+ * @param {google.maps.places.PlacesService} service contains methods related to searching for places and retrieving
+ *        details about a place
+ * @return void
+ */
 function createItemInList(place,bounds,placesList,service) {
   
   var a = document.createElement('a');
@@ -130,7 +149,11 @@ function createItemInList(place,bounds,placesList,service) {
   bounds.extend(place.geometry.location);
 }
 
-/*----Showing the modal with a variable content depending the marker selected----*/
+/**
+ * Showing the modal with a variable content depending the marker selected
+ * @param {number} i the number indicates the island to be shown in the modal
+ * @return void
+ */
 function showModal(i) {
   
   var name = "";
@@ -175,8 +198,10 @@ function showModal(i) {
   });
 }
 
-/*----To empty the HTML element which contains the list of places----*/
-
+/**
+ * To empty the HTML element which contains the list of places
+ * @return void
+ */
 function clearItemInList() {
   document.getElementById('places').innerHTML = "";
 }
